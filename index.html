@@ -27,28 +27,33 @@
 <body>
 
   <a-scene embedded arjs>
-    <!-- Mobile Model Marker -->
+    
+    <!-- Mobile -->
     <a-marker preset="hiro">
-      <a-entity 
-        gltf-model="url(mobile.glb)" 
-        scale="0.5 0.5 0.5" 
-        position="0 0 0">
-      </a-entity>
+      <a-entity gltf-model="url(mobile.glb)" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
     </a-marker>
 
-    <!-- Shoes Model Marker -->
+    <!-- Shoes -->
     <a-marker preset="kanji">
-      <a-entity 
-        gltf-model="url(shoes.glb)" 
-        scale="0.5 0.5 0.5" 
-        position="0 0 0">
-      </a-entity>
+      <a-entity gltf-model="url(shoes.glb)" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+    </a-marker>
+
+    <!-- Laptop -->
+    <a-marker preset="pattern" url="laptop.patt">
+      <a-entity gltf-model="url(laptop.glb)" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+    </a-marker>
+
+    <!-- Smartwatch -->
+    <a-marker preset="pattern" url="smartwatch.patt">
+      <a-entity gltf-model="url(smartwatch.glb)" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
   </a-scene>
 
-  <div class="hint">Point camera at HIRO marker for mobile, KANJI marker for shoes</div>
+  <div class="hint">
+    HIRO → Mobile | KANJI → Shoes | Laptop Pattern → Laptop | Smartwatch Pattern → Smartwatch
+  </div>
 
 </body>
 </html>
